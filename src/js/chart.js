@@ -85,7 +85,7 @@ const config = {
                 stacked: true,
                 title: {
                     display: true,
-                    text: 'Antall personer'
+                    text: 'Antall individ'
                 },
                 ticks: {
                     callback: function(value) {
