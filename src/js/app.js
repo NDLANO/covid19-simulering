@@ -8,16 +8,16 @@ import { SpatialHash } from './spatialhash'
 import { balls, setupBalls } from './ball'
 import { updateChart } from './chart'
 import * as PIXI from 'pixi.js'
-import * as Stats from 'stats.js'
+// import * as Stats from 'stats.js'
 
 const canvas = document.querySelector('#sim')
 
 const type = PIXI.utils.isWebGLSupported() ? 'WebGL' : 'canvas'
 PIXI.utils.sayHello(type)
 
-const stats = new Stats()
-stats.showPanel(0)
-document.body.appendChild(stats.dom)
+// const stats = new Stats()
+// stats.showPanel(0)
+// document.body.appendChild(stats.dom)
 
 const app = new PIXI.Application({
     view: canvas,
@@ -38,7 +38,7 @@ app.ticker.frame = 0
 app.ticker.add(loop)
 
 function loop(deltaTime) {
-    stats.begin()
+    // stats.begin()
     for (let ball of balls.children) {
         if (ball.condition === 'dead') continue
         spatialHash.update(ball)
@@ -47,7 +47,7 @@ function loop(deltaTime) {
         ball.updateCondition()
     }
     updateChart()
-    stats.end()
+    // stats.end()
     app.ticker.frame++
 }
 
