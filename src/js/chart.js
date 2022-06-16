@@ -9,7 +9,7 @@ Chart.defaults.font.style = 'italic'
 let labels = []
 
 const infected = {
-    label: 'Infected',
+    label: 'Smittede',
     backgroundColor: 'rgb(255, 99, 132)',
     borderWidth: 0,
     data: [],
@@ -18,7 +18,7 @@ const infected = {
 }
 
 const susceptible = {
-    label: 'Susceptible',
+    label: 'Individ',
     backgroundColor: 'rgb(99, 255, 132)',
     borderWidth: 0,
     data: [],
@@ -27,7 +27,7 @@ const susceptible = {
 }
 
 const dead = {
-    label: 'Dead',
+    label: 'Døde',
     backgroundColor: 'rgb(0, 0, 0)',
     borderWidth: 0,
     data: [],
@@ -36,7 +36,7 @@ const dead = {
 }
 
 const recovered = {
-    label: 'Recovered',
+    label: 'Immune',
     backgroundColor: 'rgb(107, 76, 154)',
     borderWidth: 0,
     data: [],
@@ -70,7 +70,7 @@ const config = {
             title: {
                 display: true,
                 padding: 20,
-                text: 'Real-time data of Covid19 Simulation'
+                text: 'Sanntiddata av Covid19-simulering'
             },
         },
         scales: {
@@ -78,14 +78,14 @@ const config = {
                 display: true,
                 title: {
                     display: false,
-                    text: 'Time'
+                    text: 'Tid'
                 }
             },
             y: {
                 stacked: true,
                 title: {
                     display: true,
-                    text: 'Number of agents'
+                    text: 'Antall personer'
                 },
                 ticks: {
                     callback: function(value) {
