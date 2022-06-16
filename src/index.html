@@ -36,15 +36,15 @@
             <div id="chart-wrapper"><canvas id="chart"></canvas></div>
             <div id="numbers">
                 <div id="susceptible" class="row">
-                    <div class="heading">Susceptible</div>
+                    <div class="heading">Sårbare</div>
                     <div class="data">5000</div>
                 </div>
                 <div id="infected" class="row">
-                    <div class="heading">Infected</div>
+                    <div class="heading">Smittede</div>
                     <div class="data">0</div>
                 </div>
                 <div id="dead" class="row">
-                    <div class="heading">Dead</div>
+                    <div class="heading">Døde</div>
                     <div class="data">0</div>
                 </div>
                 <div id="recovered" class="row">
@@ -52,19 +52,19 @@
                     <div class="data">0</div>
                 </div>
                 <div id="peak" class="row">
-                    <div class="heading">Peak</div>
+                    <div class="heading">Topp</div>
                     <div class="data">0</div>
                 </div>
                 <div id="frames" class="row">
-                    <div class="heading">Frames</div>
+                    <div class="heading">Rammer</div>
                     <div class="data">0</div>
                 </div>
                 <div id="vaccinated" class="row">
-                    <div class="heading">Vaccinated</div>
+                    <div class="heading">Vaksinerte</div>
                     <div class="data">0</div>
                 </div>
                 <div id="masks" class="row">
-                    <div class="heading">Masks</div>
+                    <div class="heading">Ansiktsmasker</div>
                     <div class="data">0</div>
                 </div>
             </div>
@@ -73,42 +73,42 @@
         <div id="settings-wrapper">
         <div id="settings-container">
             <div id="balls-slider" class="range__slider" data-min="1K" data-max="10K">
-                <div class="length__title field-title" data-length='0'>Number of agents:</div>
+                <div class="length__title field-title" data-length='0'>Antall personer:</div>
                 <input class="slider" type="range" min="1000" max="10000" step="1000" value="5000" />
             </div>
             <div id="mask-slider" class="range__slider" data-min="0" data-max="100">
-                <div class="length__title field-title" data-length='0'>% of masks:</div>
+                <div class="length__title field-title" data-length='0'>% av ansiktsmasker:</div>
                 <input class="slider" type="range" min="0" max="100" value="0" />
             </div>
             <div id="vaccination-slider" class="range__slider" data-min="0" data-max="100">
-                <div class="length__title field-title" data-length='0'>% of Vaccination:</div>
+                <div class="length__title field-title" data-length='0'>% av vaksinasjon:</div>
                 <input class="slider" type="range" min="0" max="100" value="0" />
             </div>
             <div id="fatality-slider" class="range__slider" data-min="0" data-max="100">
-                <div class="length__title field-title" data-length='0'>% of fatality:</div>
+                <div class="length__title field-title" data-length='0'>% av dødelighet:</div>
                 <input class="slider" type="range" min="0" max="100" value="20" />
             </div>
             <div class="settings">
-                <span class="settings__title field-title">settings</span>
+                <span class="settings__title field-title">innstillinger</span>
                 <div class="setting">
                     <input type="checkbox" id="stack"/>
                     <label for="stack">Stack Graph</label>
                 </div>
                 <div class="setting">
                     <input type="checkbox" id="set-perimeter"/>
-                    <label for="set-perimeter">Set Perimeter</label>
+                    <label for="set-perimeter">Vis perimeter</label>
                 </div>
                 <div class="setting">
                     <input type="checkbox" id="show-fatality"/>
-                    <label for="show-fatality">Show Fatality</label>
+                    <label for="show-fatality">Vis dødelighet</label>
                 </div>
                 <div class="setting">
                     <input type="checkbox" id="show-spatialhash" disabled/>
-                    <label for="show-spatialhash">Show Spatial Hash</label>
+                    <label for="show-spatialhash">Vis rutenett</label>
                 </div>
             </div>
         </div>
-	    <button class="btn">Run Simulation</button>
+	    <button class="btn">Kjør simulering</button>
         </div>
     </div>
 </body>
