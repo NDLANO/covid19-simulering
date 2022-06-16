@@ -18,7 +18,7 @@ const infected = {
 }
 
 const susceptible = {
-    label: 'Individ',
+    label: 'Mottagelige',
     backgroundColor: 'rgb(99, 255, 132)',
     borderWidth: 0,
     data: [],
