@@ -1,6 +1,6 @@
 import { balls, setupBalls } from './ball'
 import { app, spatialHash } from './app'
-import { chart, resetChart } from './chart'
+import { chart } from './chart'
 
 ////////////
 // Slider //
@@ -39,8 +39,6 @@ function getValue(id) {
 // Switch //
 ////////////
 
-const stackSwitch = document.querySelector('#stack')
-const perimeterSwitch = document.querySelector('#set-perimeter')
 const fatalitySwitch = document.querySelector('#show-fatality')
 const spatialHashSwitch = document.querySelector('#show-spatialhash')
 
@@ -72,10 +70,8 @@ function reset() {
         getValue('balls-slider'),
         getValue('mask-slider') / 100,
         getValue('vaccination-slider') / 100,
-        getValue('fatality-slider') / 100,
-        perimeterSwitch.checked
+        getValue('fatality-slider') / 100
     )
-    if (!stackSwitch.checked) resetChart()
     fatalitySwitch.checked = false
     spatialHashSwitch.checked = false
     if (getValue('balls-slider') <= 3000) spatialHashSwitch.disabled = false
