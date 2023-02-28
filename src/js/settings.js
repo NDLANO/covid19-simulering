@@ -1,6 +1,6 @@
 import { balls, setupBalls } from './ball'
 import { app, spatialHash } from './app'
-import { chart } from './chart'
+import { chart, resetChart } from './chart'
 
 ////////////
 // Slider //
@@ -72,6 +72,7 @@ function reset() {
         getValue('vaccination-slider') / 100,
         getValue('fatality-slider') / 100
     )
+    resetChart()
     fatalitySwitch.checked = false
     spatialHashSwitch.checked = false
     if (getValue('balls-slider') <= 3000) spatialHashSwitch.disabled = false
